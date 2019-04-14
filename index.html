@@ -19,9 +19,11 @@
 		.card_sec .card{border:none;}
 		.minh{height:100vh;}
 		.menu{background: RGBA(0,0,0,0.5);}
-		.navbar-light .navbar-nav .nav-link {color:#fff;}
+		.navbar-light .navbar-nav .nav-link {color:#fff; padding: 0;}
+		.nav-item{margin-right: 25px;}
+		.nav-item:last-child{margin-right: 0px;}
 		.navbar-light .navbar-nav .nav-link:hover {color:#999999;}
-		.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link{color:#999999;}
+		.navbar-light .navbar-nav .active > .nav-link{color:#999999; border-bottom: 2px solid #ffffff;}
 		.card-body h5{font-weight: 600; text-transform: uppercase; padding-top: 5px;}
 		.whoweare{text-align: center; background: url(images/parallex.jpg) no-repeat center center; background-attachment: fixed; background-size: cover; padding-top: 100px; padding-bottom: 100px; position: relative; color:#fff;}
 		.whoweare h1{font-weight: 700; font-size: 45px; padding-bottom: 10px;}
@@ -39,7 +41,7 @@
 		.footer p{ margin-bottom: 0; font-size: 15px; color:#99999;}
 		.padrightzero{padding-right: 0;}
 		.padleftzero{padding-left: 0;}
-		.actheader{background: #000000;}
+		.actheader{background: #f2f2f2;}
 	</style>
 	
   </head>
@@ -52,7 +54,7 @@
 <div class="row menu">
 <div class="container">
 <nav class="navbar navbar-expand-lg navbar-light ">
-  <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+  <a class="navbar-brand" href="#"><img class="logo" src="images/logo.png"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -88,6 +90,7 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active minh">
@@ -96,12 +99,17 @@
        <h2 class="animated wow fadeInDown">Dummy Empower Technology Title</h2>
       </div>
     </div>
+        <div class="carousel-item minh">
+      <img class="d-block w-100" src="images/work_diversity.jpg" alt="Second slide">
+      <div class="carousel-caption d-none d-md-block caption min-vh-100">
+        <h2 class="animated wow fadeInDown">Dummy Empower Technology Title</h2>
+      </div>
+    </div>
     <div class="carousel-item minh">
       <img class="d-block w-100" src="images/three.jpg" alt="Second slide">
       <div class="carousel-caption d-none d-md-block caption min-vh-100">
         <h2 class="animated wow fadeInDown">Dummy Empower Technology Title</h2>
       </div>
-
     </div>
     <div class="carousel-item minh">
       <img class="d-block w-100" src="images/four.jpg" alt="Third slide">
@@ -264,8 +272,15 @@
 $(window).on("scroll", function() {
     if($(window).scrollTop() > 50) {
         $(".menu").addClass("actheader");
+		$(".logo").attr('src','images/logo_v2.png');
+		$(".navbar-light .navbar-nav .nav-link").css({"color":"#333333"});
+		
     } else {
        $(".menu").removeClass("actheader");
+	   $(".logo").attr('src','images/logo.png');
+       $(".navbar-light .navbar-nav .nav-link").css({"color":"#ffffff"});
+	   $(".nav-item .active").css({"color":"#999999"});
+		
     }
 });
 	})  
