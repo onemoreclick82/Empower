@@ -48,24 +48,23 @@
 .dropdown-item:hover{background: RGBA(0,0,0,0.5);}	
 .dropdown-divider{margin: 0px;}
 		
-		.adjcontact{ width: 500px; margin-right: 10%;}
+		.banner{background: url(images/five.jpg) no-repeat center center;
+			background-size: cover; min-height: 300px; background-attachment: fixed;}
+		.about_sec h1{font-weight: 600; font-size: 45px; padding-bottom: 10px; padding-top: 50px; color:#333333;}
+		.about_sec p{ padding-bottom: 50px;}
 		
+		.banner h1{font-size: 100px; font-weight: 600; color:#fff; text-align: center; padding-top: 100px; text-shadow: 5px 5px 5px #333;}
 		
-		@media (max-width:1115px){
-			.minh{height:auto;}
+				@media(max-width:480px){
+			.banner h1{font-size: 4em;}	
 		}
-		
-		@media (max-width:991px){
-			.adjcontact{ width: auto; margin-right: 0; margin-left: -15px; word-break: break-all;}
-		}
-		
 	</style>
 	
   </head>
   <body>
 
   
-<div id="carouselExampleIndicators" class="carousel slide carousel-fade clearfix" data-ride="carousel">
+
   
 <div class="container-fluid fixed-top clearfix">
 <div class="row menu">
@@ -77,7 +76,7 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="index.html">Home</a>
       </li>
       <li class="nav-item">
@@ -97,7 +96,7 @@
           <a class="dropdown-item" href="Development.html">Website Development</a>
         </div>
       </li>
-      <li class="nav-item dropdown dropmenu">
+      <li class="nav-item dropdown dropmenu active">
         <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Industries
         </a>
@@ -119,163 +118,20 @@
  </div>
 </div>
 </div>
-  
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active minh">
-      <img class="d-block w-100" src="images/six.jpg" alt="First slide">
-      <div class="carousel-caption d-none d-md-block caption min-vh-100">
-       <h2 class="animated wow fadeInDown">Dummy Empower Technology Title</h2>
-      </div>
-    </div>
-        <div class="carousel-item minh">
-      <img class="d-block w-100" src="images/work_diversity.jpg" alt="Second slide">
-      <div class="carousel-caption d-none d-md-block caption min-vh-100">
-        <h2 class="animated wow fadeInDown">Dummy Empower Technology Title</h2>
-      </div>
-    </div>
-    <div class="carousel-item minh">
-      <img class="d-block w-100" src="images/three.jpg" alt="Second slide">
-      <div class="carousel-caption d-none d-md-block caption min-vh-100">
-        <h2 class="animated wow fadeInDown">Dummy Empower Technology Title</h2>
-      </div>
-    </div>
-    <div class="carousel-item minh">
-      <img class="d-block w-100" src="images/four.jpg" alt="Third slide">
-      <div class="carousel-caption d-none d-md-block caption ">
-         <h2 class="animated wow fadeInDown">Dummy Empower Technology Title</h2>
-      </div>
-
-    </div>
-    <div class="carousel-item minh">
-      <img class="d-block w-100" src="images/seven.jpg" alt="fourth slide">
-      <div class="carousel-caption d-none d-md-block caption ">
-         <h2 class="animated wow fadeInDown">Dummy Empower Technology Title</h2>
-      </div>
-
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+<div class="container-fluid banner">	
+<h1>Industries</h1>
 </div>
-  
-  
-  <div class="container-fluid ">
-  <div class="row">
-  	<div class="col-lg-6 contactsec animated wow flipInX" style="background: #e6e7e5;">
-  	<div class="container adjcontact">
-  	<div class="row">
-  	<div class="col-lg-9 offset-lg-3">
-  	<div class="media contact">
-    <img src="images/contact.png" class="mr-3" alt="...">
-    <div class="media-body">
-    <h5 class="mt-0">General Inquiries</h5>
-    Email: info@Empowertechservices.com<br>
-    Mobile: 667-240-4922
-    </div>
-    </div>
-	</div>
-    </div>
-	</div>
-  		
-  	</div>
-  	<div class="col-lg-6 contactsec animated wow flipInX"  style="background: #f2f2f2;">
-    <div class="row">
-    <div class="col-lg-9">
-  	<div class="media contact">
-    <img src="images/add.png" class="mr-3" alt="...">
-    <div class="media-body contact">
-    <h5 class="mt-0">Contact Information</h5>
-    Empower Technology Services LLC<br>
-    Columbia, Maryland
-    </div>
-    </div>
-	</div>
-	</div>
-  	</div>
-  </div>	
-  </div>
-
-  <div class="container-fluid whoweare">
-  <div class="row">
-  <div class="overley"></div>
-  <div class="container">
-  <div class="row">
-  	<div class="col-lg-12 animated wow zoomIn">
-  	<h1>Empower Technology Services</h1>	
-  	<p>Empower Technology Services is an IT company founded in Maryland. Our goal is to empower our clients with solutions to complex business questions using IT services. We specialize in IT Staffing/IT Consulting/IT Training. We provide an array of services in both Government and Commercial industries. At Empower Technology Services, we are client centric and results driven.</p>
-  	</div>
-  </div>	
-  </div>
-  </div>
-  </div>
-   
-   <div class="container-fluid card_block">
-    <div class="row">
-    <div class="container card_sec">
-    <div class="row">
-    
-    <div class="col-lg-3 padrightzero animated wow heartBeat">
-    <div class="card text-center">
-    <div class="card-body cardone shadow animated wow fadeInDownBig">
-    <img src="images/ittraining.png" alt="">
-    <h5 class="card-title">IT Training</h5>
-    <p class="card-text">Our classes are delivered live virtually, by certified interactive instructors who bring...</p>
-    <a href="#" class="btn btn-outline-primary splbtn">Continue</a>
-  </div>
+ 
+ 
+<div class="container">	
+<div class="row">
+<div class="col-lg-12 about_sec animated wow fadeInDown">
+<h1>Commercial Contracts</h1>
+<hr>	
+<p>Empower Technology Services has a team of experienced professionals to cater for our ever-growing commercial Clients.</p>
+</div>	
 </div>
-    </div>
-    
-     <div class="col-lg-3 padleftzero padrightzero">
-    <div class="card text-center">
-  <div class="card-body cardtwo shadow ">
-    <img src="images/itsaffing.png" alt="">
-    <h5 class="card-title">IT Staffing</h5>
-    <p class="card-text">We provide our clients with the most talented people to tackle the most complex business...</p>
-    <a href="#" class="btn btn-outline-light splbtn">Continue</a>
-  </div>
 </div>
-    </div>
-    
-     <div class="col-lg-3 padleftzero padrightzero">
-    <div class="card text-center">
-  <div class="card-body cardthree shadow animated wow fadeInDownBig">
-    <img src="images/itconsulting.png" alt="">
-    <h5 class="card-title">IT Consulting </h5>
-    <p class="card-text">At Empower Technology Services, we empower our clients by hiring the most experienced...</p>
-    <a href="#" class="btn btn-outline-primary splbtn">Continue</a>
-  </div>
-</div>
-    </div>
-    
-     <div class="col-lg-3 padleftzero">
-    <div class="card text-center" >
-  <div class="card-body cardfour shadow">
-    <img src="images/webdevelopment.png" alt="">
-    <h5 class="card-title">Website Development</h5>
-    <p class="card-text">At Empower Technology Services we create original, customized websites to suit our customer...</p>
-    <a href="#" class="btn btn-outline-primary splbtn">Continue</a>
-  </div>
-</div>
-    </div>
-    
-    </div>
-	   </div>	
-    </div>
-    
-	  </div>
     
     
     <div class="container-fluid footer">
@@ -320,7 +176,8 @@ $(window).on("scroll", function() {
 		
     }
 });
-		$(document).ready(function () {
+		
+			$(document).ready(function () {
 $('.navbar-light .dropmenu').hover(function () {
         $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
     }, function () {
