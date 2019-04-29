@@ -10,151 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <script type="text/javascript" src="js/wow.js"></script>
-    <style type="text/css">
-		body{font-family: 'Source Sans Pro', sans-serif;}
-		.caption{ top:42%;}
-		.carousel h2{ font-weight: 900; font-size: 50px; }
-		.card_block{ padding-top: 65px; padding-bottom: 65px;}
-		.card{background: none;}
-		.card_sec .card{border:none;}
-		.minh{height:100vh;}
-		.menu{background: RGBA(0,0,0,0.5);}
-		.navbar-light .navbar-nav .nav-link {color:#fff; padding: 0;}
-		.nav-item{margin-right: 25px;}
-		.nav-item:last-child{margin-right: 0px;}
-		.navbar-light .navbar-nav .nav-link:hover {color:#999999;}
-		.navbar-light .navbar-nav .active > .nav-link{color:#999999; border-bottom: 2px solid #ffffff;}
-		.card-body h5{font-weight: 600; text-transform: uppercase; padding-top: 5px;}
-		.whoweare{text-align: center; background: url(images/parallex.jpg) no-repeat center center; background-attachment: fixed; background-size: cover; padding-top: 100px; padding-bottom: 100px; position: relative; color:#fff;}
-		.whoweare h1{font-weight: 700; font-size: 45px; padding-bottom: 10px;}
-		.whoweare p{font-size: 18px; width: 75%; margin: 0 auto;}
-		.overley{ position: absolute;width: 100%; height: 100%; top:0; left:0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); }
-		.contactsec{ padding-top: 55px; padding-bottom: 55px;}
-		.media-body h5{font-weight: 600;}
-		.contact img{margin-top: 10px;}
-		.cardone{ background: #f2f2f2;}
-		.cardtwo{background: #2089cb; color:#fff;}
-		.cardthree{background: #f2f2f2;}
-		.cardfour{background: #1a1a1a;  color:#fff;}
-		.splbtn{width: 120px; padding: 3px 3px 4px 3px;}
-		.footer{background: #1a1a1a; border-top:3px solid #2089cb; color:#fff; padding-top: 25px; padding-bottom: 25px;}
-		.footer p{ margin-bottom: 0; font-size: 15px; color:#999999;}
-		.padrightzero{padding-right: 0;}
-		.padleftzero{padding-left: 0;}
-		.actheader{background: #f2f2f2;}
-		
-		
-		
-		.banner{background: url(images/five.jpg) no-repeat center center;
-		background-size: cover; min-height: 300px; background-attachment: fixed;}
-		.about_sec h1{font-weight: 600; font-size: 45px; padding-bottom: 10px; padding-top: 50px; color:#333333;}
-		.about_sec p{ padding-bottom: 50px;}
-		.panel-body p span:first-child{padding-top: 0px;}
-		.panel-body p span{font-size: 28px;font-weight: bold; padding-top: 20px; display: inline-block;}
-		.panel-body p {font-size: 18px;} 
-		
-	
-.navbar-expand-lg .navbar-nav .dropdown-menu{top: 23px; background: RGBA(0,0,0,0.8); border-radius: 0; padding: 0px;}
-.navbar-expand-lg .navbar-nav .dropdown-menu a{color:#fff; padding: 6px 15px 6px 15px;}
-.dropdown-item:hover{background: RGBA(0,0,0,0.5);}	
-.dropdown-divider{margin: 0px;}
-		
-		.banner h1{font-size: 100px; font-weight: 600; color:#fff; text-align: center; padding-top: 100px; text-shadow: 5px 5px 5px #333;}
-		
-#accordion{padding-bottom: 30px;}		
-		
-#accordion .panel{
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-   /* margin: 0 30px 10px 30px;*/
-    overflow: hidden;
-    position: relative;
-}
-#accordion .panel-heading{
-    padding: 0;
-    border: none;
-    border-radius: 0;
-    position: relative;
-}
-#accordion .panel-title a{
-    display: block;
-    padding: 15px 20px;
-    margin: 0;
-    background: #2089cb;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #fff;
-    border-radius: 0;
-    position: relative;
-}
-#accordion .panel-title a:hover{text-decoration: none;}		
-#accordion .panel-title a.collapsed{ background: #1c2336;}
-#accordion .panel-title a:before,
-#accordion .panel-title a.collapsed:before{
-	content: "";
-    width: 30px;
-    height: 30px;
-    line-height: 25px;
-    border-radius: 50%;
-    background: #2089cb;
-    font-size: 14px;
-    font-weight: normal;
-    color: #fff;
-    text-align: center;
-    border: 3px solid #fff;
-    position: absolute;
-    top: 10px;
-    right: 14px;
-}
-#accordion .panel-title a.collapsed:before{
-    content: "";
-    background: #ababab;
-    border: 4px solid #626262;
-}
-#accordion .panel-title a:after,
-#accordion .panel-title a.collapsed:after{
-    content: "";
-    width: 17px;
-    height: 7px;
-    background: #fff;
-    position: absolute;
-    top: 22px;
-    right: 0;
-}
-#accordion .panel-title a.collapsed:after{
-    width: 19px;
-    background: #ababab;
-}
-#accordion .panel-body{
-    border-left: 3px solid #2089cb;
-    border-top: none;
-    background: #fff;
-    /*font-size: 15px;*/
-    color: #1c2336;
-    line-height: 27px;
-    position: relative;
-}
-#accordion .panel-body:before{
-    content: "";
-    height: 3px;
-    width: 50%;
-    background: #2089cb;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-#accordion .panel-body p{
-  padding: 10px 10px 20px 10px;
-}
-		
-				@media(max-width:480px){
-			.banner h1{font-size: 4em;}	
-		}
-		
-	</style>
-	
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
@@ -204,8 +60,15 @@
        <li class="nav-item">
         <a class="nav-link" href="Careers.html">Careers</a>
       </li>
-       <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact Us</a>
+         <li class="nav-item dropdown dropmenu">
+        <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Contact Us
+        </a>
+        <div class="dropdown-menu sm-menu">
+          <a class="dropdown-item" href="contact.html">Contact Us</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="Feedback.html">Feedback</a>
+        </div>
       </li>
     </ul>
   </div>
